@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/styles.css') }}">
+    <title>Template</title>
+</head>
+<body>
+    <h1>Predict the Stock</h1>
+    <h2>
+        Enter The details of the Stock 
+    </h2>
+    
+    <form action="/" method="POST" class="formtosubmit">
+        <label for="">Market Capture</label>
+        <input type="number" name="MarketCapture" class="MarketCapture" placeholder="MarketCapture"><br><br>
+
+        <label for="">P/E Ratio</label>
+        <input type="number" name="PERatio" class="PERatio" placeholder="PERatio"><br><br>
+
+        <label for="">Dividend</label>
+        <input type="number" name="Dividend" class="Dividend" placeholder="Dividend"><br><br>
+
+        <label for="">Promoter Holdings</label>
+        <input type="number" name="PromoterHoldings" class="PromoterHoldings" placeholder="PromoterHoldings"><br><br>
+
+        <label for="">Profit Growth %</label>
+        <input type="number" name="ProfitGrowth" class="ProfitGrowth" placeholder="ProfitGrowth"><br><br>
+
+        <label for="">Sales Growth %</label>
+        <input type="number" name="SalesGrowth" class="SalesGrowth" placeholder="SalesGrowth"><br><br>
+
+        <label for="">ROCE</label>
+        <input type="number" name="ROCE" class="ROCE" placeholder="ROCE"><br><br>
+
+        <input type="submit" class="submitbtn">
+    </form>
+
+    <div id="result"></div>
+    <h3>RESULT: </h3>
+    <h3>{{ result }}</h3>
+
+</body>
+</html>

@@ -1,0 +1,64 @@
+ body {
+    background: linear-gradient(rgba(0, 0, 0, 0.59), rgba(11, 9, 51, 0.59)), url(https://www.bankrate.com/2022/04/29150152/Best-performing-stocks.jpeg?auto=webp&optimize=high&crop=16:9);
+    background-size: cover;
+    background-position: center center;
+    background-attachment: fixed;
+    color: #fff;
+    font-family: 'Poppins', sans-serif;
+  }
+  
+  
+  h1, h2, h3, h4, h5, h6 {
+    text-align: center;
+    color: #fff;
+  }
+  
+
+  form {
+    background-color: #1a1a1a;
+    padding: 20px;
+    border-radius: 0px;
+    width: 50%;
+    margin: 0 auto;
+  }
+  
+  label {
+    display: block;
+    margin-bottom: 5px;
+  }
+  
+  input[type="number"] {
+    width: 100%;
+    padding: 8px;
+    border: none;
+    border-radius: 5px;
+    background-color: #333;
+    color: #fff;
+    margin-bottom: 10px;
+  }
+  
+  input[type="submit"] {
+    background-color: #008000;
+    text-align: center;
+    border: none;
+    color: #fff;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+  }
+  
+  input[type="submit"]:hover {
+    background-color: #006600;
+  }
+  
+  #result {
+    margin-top: 20px;
+  }
+  
+  @media (max-width: 768px) {
+    form {
+      width: 80%;
+    }
+  }
+  
